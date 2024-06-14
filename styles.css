@@ -1,0 +1,160 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('NomadsAtWork.png'); /* Replace with your wallpaper image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    cursor: url('cursor.png'), auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Updated to space between items */
+    align-items: center;
+    padding: 10px 20px;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    /* Updated to align center */
+    flex: 1; /* Allows logo to take remaining space */
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.instagram {
+    /* Adjusted to stay at the right side corner */
+    margin-left: auto; /* Pushes it to the right */
+    margin-right: none; /* Provides some spacing from the right edge */
+}
+
+.instagram img {
+    width: 25px;
+    height: 25px;
+}
+
+.main-section {
+    padding-top: 100px; /* Increase padding to center the section vertically */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: calc(100vh - 100px); /* Adjust height to fill remaining viewport height after navbar */
+}
+
+.section {
+    display: flex;
+    max-width: calc(90vw - 100px); /* Adjust width as needed */
+    margin: 0 auto; /* Center the section horizontally */
+    text-align: center; /* Center text content */
+}
+
+.section-left {
+    flex: 1;
+}
+
+.section-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-content {
+    text-align: center;
+}
+
+.section-img {
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.section-img:hover {
+    transform: scale(90%);
+}
+
+
+@media (min-width: 768px) {
+    .section {
+        flex-direction: row;
+    }
+
+    .section-left {
+        flex: 1;
+        padding-right: 20px; /* Adjust spacing between sections */
+    }
+
+    .section-right {
+        flex: 1;
+        padding-left: 20px; /* Adjust spacing between sections */
+    }
+
+    .section-img {
+        max-width: 100%; /* Maintain responsiveness */
+    }
+}
+
+#sechead {
+    color: antiquewhite;
+    text-align: center;
+}
+
+#text1 {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: antiquewhite;
+}
+
+#workbtn {
+    font-family: "Poppins", sans-serif;
+    background-color: antiquewhite;
+    height: 35px;
+    width: 130px;
+    border-radius: 1%;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+#workbtn:hover {
+    transform: scale(1.1);
+}
