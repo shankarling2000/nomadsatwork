@@ -163,19 +163,20 @@ body {
     background-repeat: no-repeat;
     height: 90vh;
     width: 100vw;
-    overflow-x: hidden;;
+    overflow-x: hidden;
 }
 .main-section2{
     background-image: url('bg2.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: none;
-}
-
-#sechead2{ 
-    font-family: poppins, sans-serif;
-    font-size: 100px;
+    height: 90vh;
+    width: 100vw;
+    overflow-x: hidden;
     text-align: center;
-    color: white;
+}
+#sechead2{
+    font-family: poppins, sans-serif;
+    color: antiquewhite;
+    font-size: 80px;
 }
