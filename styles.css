@@ -166,7 +166,8 @@ body {
     overflow-x: hidden;
 }
 .main-section2{
-    background-image: url('bg2.avif');
+    
+    background-image: url('bg2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -176,7 +177,8 @@ body {
     text-align: center;
 }
 #sechead2{
+     background-color: rgba(0, 0, 0, 0.7); /* Black with 50% opacity */;
     font-family: poppins, sans-serif;
     color: antiquewhite;
-    font-size: 80px;
+    font-size: 65px;
 }
