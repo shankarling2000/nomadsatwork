@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     margin: 0;
     font-family: "Caveat", cursive;
@@ -9,12 +7,9 @@ body {
     cursor: url('cursor2.png'), auto;
 }
 
-.main-section{
-    background-image: url('NomadsAtWork.png'); /* Replace with your wallpaper image URL */
-}
 .navbar {
     display: flex;
-    justify-content: space-between; /* Updated to space between items */
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     height: 100px;
@@ -33,12 +28,10 @@ body {
 }
 
 .logo {
-    /* Updated to align center */
-    flex: 2; /* Allows logo to take remaining space */
+    flex: 2;
     display: flex;
     justify-content: center;
 }
-
 
 .logo img {
     width: 150px;
@@ -51,30 +44,29 @@ body {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* Center the content horizontally */
+    margin: 0 auto;
 }
 
-.instagram  {
+.instagram {
     margin-left: auto;
     margin-right: 80px;
     width: 25px;
     height: 25px;
-    
 }
 
 .main-section {
-    padding-top: 100px; /* Increase padding to center the section vertically */
+    padding-top: 100px;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: calc(100vh - 100px); /* Adjust height to fill remaining viewport height after navbar */
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
 }
 
 .section {
     display: flex;
-    max-width: calc(90vw - 100px); /* Adjust width as needed */
-    margin: 0 auto; /* Center the section horizontally */
-    text-align: center; /* Center text content */
+    max-width: calc(90vw - 100px);
+    margin: 0 auto;
+    text-align: center;
 }
 
 .section-left {
@@ -94,18 +86,15 @@ body {
 }
 
 .section-img {
-    width: 100%; /* Ensure the image takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    margin-bottom: none;
-    padding-bottom: none;
 }
 
 .section-img:hover {
     transform: scale(99%);
 }
-
 
 @media (min-width: 768px) {
     .section {
@@ -114,16 +103,16 @@ body {
 
     .section-left {
         flex: 1;
-        padding-right: 20px; /* Adjust spacing between sections */
+        padding-right: 20px;
     }
 
     .section-right {
         flex: 1;
-        padding-left: 20px; /* Adjust spacing between sections */
+        padding-left: 20px;
     }
 
     .section-img {
-        max-width: 100%; /* Maintain responsiveness */
+        max-width: 100%;
     }
 }
 
@@ -155,8 +144,7 @@ body {
     transform: scale(1.1);
 }
 
-
-.main-section{
+.main-section {
     background-image: url('bg1.png');
     background-size: cover;
     background-position: center;
@@ -165,9 +153,9 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
-.main-section2{
-    
-    background-color: antiquewhite;
+
+.main-section2 {
+    background-color: rgb(0, 0, 0);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -175,47 +163,72 @@ body {
     width: 100vw;
     overflow-x: hidden;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-#sechead2{
-     background-color: rgba(0, 0, 0, 0.7); /* Black with 50% opacity */;
-    font-family: poppins, sans-serif;
-    color: antiquewhite;
+
+.upper-half {
+    flex: 1;
+    display: flex;
+    background-color: antiquewhite;
+    background-image: url('natw.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.lower-half {
+    
+    flex: 1;
+    background-color: antiquewhite; /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sechead2 {
+    font-family: "Poppins", sans-serif;
+    color: black;
     font-size: 50px;
 }
-
-
 
 .cards-container {
     display: flex;
     justify-content: space-around;
     margin: 5px auto;
     max-width: 90%;
-    
 }
 
 .card {
-    /* background-color: rgb(0, 0, 0, 0.8); */
     border-radius: 10px;
     margin: 20px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); */
     overflow: hidden;
     padding: 20px;
     text-align: left;
     width: 30%;
+    color: black;
 }
 
 .card h3 {
-    
     text-align: center;
     font-family: "Caveat", cursive;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 80px;
     margin: 10px 0;
+   ;
 }
 
 .card p {
-    
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
-    color: #333;
+    color: black;
 }
