@@ -6,16 +6,12 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-image: url('NomadsAtWork.png'); /* Replace with your wallpaper image URL */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    cursor: url('cursor.png'), auto;
+    cursor: url('cursor2.png'), auto;
 }
 
+.main-section{
+    background-image: url('NomadsAtWork.png'); /* Replace with your wallpaper image URL */
+}
 .navbar {
     display: flex;
     justify-content: space-between; /* Updated to space between items */
@@ -38,10 +34,11 @@ body {
 
 .logo {
     /* Updated to align center */
-    flex: 1; /* Allows logo to take remaining space */
+    flex: 2; /* Allows logo to take remaining space */
     display: flex;
     justify-content: center;
 }
+
 
 .logo img {
     width: 150px;
@@ -57,15 +54,12 @@ body {
     margin: 0 auto; /* Center the content horizontally */
 }
 
-.instagram {
-    /* Adjusted to stay at the right side corner */
-    margin-left: auto; /* Pushes it to the right */
-    margin-right: none; /* Provides some spacing from the right edge */
-}
-
-.instagram img {
+.instagram  {
+    margin-left: auto;
+    margin-right: 80px;
     width: 25px;
     height: 25px;
+    
 }
 
 .main-section {
@@ -103,11 +97,13 @@ body {
     width: 100%; /* Ensure the image takes full width of its container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: none;
+    padding-bottom: none;
 }
 
 .section-img:hover {
-    transform: scale(90%);
+    transform: scale(99%);
 }
 
 
@@ -157,4 +153,29 @@ body {
 
 #workbtn:hover {
     transform: scale(1.1);
+}
+
+
+.main-section{
+    background-image: url('bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100vw;
+    overflow-x: hidden;;
+}
+.main-section2{
+    background-image: url('bg2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: none;
+}
+
+#sechead2{ 
+    font-family: poppins, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: white;
 }
